@@ -10,7 +10,7 @@ In TypeScript it can be something like this:
 ```typescript
 type Activity = Video | Photo | Message
 ```
-the type `Shape` is a union type that can represent a `Square`, a `Circle` or a `Rectangle` each with their own set of attributes.
+the type `Activity` is a union type that can represent a `Video`, a `Post` or a `Image` each with their own set of attributes.
 
 ## Union Types are useful in Databases
 
