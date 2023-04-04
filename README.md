@@ -8,7 +8,7 @@ Union type relations are used to model entities that can have multiple different
 In TypeScript it can be something like this:
 
 ```typescript
-type Activity = Video | Photo | Message
+type Activity = Video | Photo | Image
 ```
 the type `Activity` is a union type that can represent a `Video`, a `Post` or a `Image` each with their own set of attributes.
 
