@@ -14,7 +14,7 @@ the type `Activity` is a union type that can represent a `Video`, a `Post` or a 
 
 ## Union Types are useful in Databases
 
-In the context of databases, union types are often called **Polymorphic Associations** which referes to the ability of an object to take on many forms. Idealy, in a polymorphic association a model can belong a model of a set of possible models.
+In the context of databases, union types are often called **Polymorphic Associations** which referes to the ability of an object to take on many forms. Idealy, in a polymorphic association a model can belong to a model of a set of possible models.
 
 #### Let's look at a simple use case
 
