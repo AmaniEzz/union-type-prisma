@@ -20,7 +20,7 @@ In the context of databases, union types are often called **Polymorphic Associat
 
 Imagine you have a database for a payment system where a user can use different payment methods to pay for their favorite products. In the database you want to save a transaction record each time a user buy something on your website.
 
-Let's say payment methods can include `Credit Card`, `PayPal` and `BankTransfer`. By using a union type, you could define a single `Transaction`` type that can be of any of the mentioned payment methods, while still allowing you to work with each type of product in a type-safe way.
+Let's say payment methods can include `Credit Card`, `PayPal` and `BankTransfer`. By using a union type, you could define a single `Transaction` type that can be of any of the mentioned payment methods, while still allowing you to work with each type of product in a type-safe way.
 
 ### How Union types/Polymorphic Associations can be modeled in plain **SQL**.
 
