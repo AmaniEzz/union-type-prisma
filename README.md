@@ -88,7 +88,7 @@ Another issue with this model is that the lack of relations would allow data to 
 
 ## What does a workaround with Prisma looks like for using union types?
 
-Unfortunately, Prisma currently doesn't support union types or Polymorphic Associations. Since union types is a very demanding feature and needed in many application, I'm going to show you different workarounds to work with union types in Prisma and TypeScript. 
+Unfortunately, Prisma currently doesn't support union types or Polymorphic Associations. Since union types is a very demanding feature and needed in many applications, I'm going to show you different workarounds to work with union types in Prisma and TypeScript. 
 
 Let's see another example of an e-commerce database where an `Item` can be a `Book` or `Movie`. First, we will see how to implement the **Multiple Foreign keys** approach in Prisma, then we will implement the **Single Polymorphic Association Table** approach. So go grab a cup of coffee because things are getting more interesting now ☕😄
 
@@ -166,7 +166,7 @@ const items: BookOrMovie[] = await primsa.item.findMany({
   })
 ```
 
-We also included a complete example [here](https://github.com/AmaniEzz/union-type-prisma/tree/master/solution1) on how to use **Multiple Foreign keys approach** to work around the Prisma lack of union type support with a **GraphQL** layer to that contains actual union types. 
+We also included a complete example [here](https://github.com/AmaniEzz/union-type-prisma/tree/master/solution1) on how to use **Multiple Foreign keys approach** to work around the Prisma lack of union type support with a **GraphQL** layer that contains actual union types. 
 
 ---
 
