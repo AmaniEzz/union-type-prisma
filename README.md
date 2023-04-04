@@ -82,15 +82,15 @@ CREATE TABLE payment (
 
 This approach requires fewer tables than the separate join table approach, but it can be more difficult to query use bunch of UNIONs.
 
-Another issue with this model is that the lack of relations would allow data to grow into invalid state and orphan records causing referential integrity issues.  However, we can use some CHECK and Constrains to get around those integrity issues. So, I believe this is the safest obtion.
+Another issue with this model is that the lack of relations would allow data to grow into invalid state and orphan records causing referential integrity issues.  However, we can use some CHECK and Constrains to get around those integrity issues. So, I believe this may be a safest obtion.
 
 ---
 
-## What does a workaround with Prisma look like for using union types?
+## What does a workaround with Prisma looks like for using union types?
 
 Unfortunately, Prisma currently doesn't support union types or Polymorphic Associations. Since union types is a very demanding feature and needed in many application, I'm going to show you different workarounds to work with union types in Prisma and TypeScript. 
 
-Let's see another example of an e-commerce database where an `Item` can be a `Book` or `Movie`. First, we will see how to implement the **Multiple Foreign keys** approach in Prisma, then we will implement the **Single Polymorphic Association Table** approach. So go grab a cup of coffee because things starting to be interesting now ☕😄
+Let's see another example of an e-commerce database where an `Item` can be a `Book` or `Movie`. First, we will see how to implement the **Multiple Foreign keys** approach in Prisma, then we will implement the **Single Polymorphic Association Table** approach. So go grab a cup of coffee because things are getting more interesting now ☕😄
 
 ### **1) Multiple Foreign keys approach** 
  Create a separate foreign key column for each subtype that the single table can reference. 
