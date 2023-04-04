@@ -221,6 +221,6 @@ then in the application layer we can query all items with their types like in th
   );
 ```
 
-You can find the complete example [here](https://github.com/AmaniEzz/union-type-prisma/tree/master/solution2) on how to use  **Single Polymorphic Association Table** approach to work with union types in TypeScript when using Prisma to query a relational databasew. The example also include **GraphQL** schema that contain union types and resolvers to resolve each type. 
+You can find the complete example [here](https://github.com/AmaniEzz/union-type-prisma/tree/master/solution2) on how to use  **Single Polymorphic Association Table** approach to work with union types in TypeScript when using Prisma to query a relational database. The example also include **GraphQL** schema that contain union types and resolvers to resolve each type. 
 
 ---
